@@ -13,7 +13,7 @@ data "template_file" "template_container_definitions" {
     fargate_memory = "${var.fargate_memory}"
     aws_region     = "${var.aws_region}"
     app_port       = "${var.container_port}"
-    name_prefix    = "${var.name_prefix}-container"
+    name_prefix    = "${var.name_prefix}-ecs-machine"
     runner_token   = "${var.runner_token_param_store}"
   }
 }
